@@ -30,14 +30,15 @@ class Stories extends Vue {
                     id: 1,
                     title: "Story 1",
                     href: "/story/1",
+                    details: {},
                 },
                 {
-                    id: 1,
+                    id: 2,
                     title: "Story 2",
                     href: "/story/2",
                 },
                 {
-                    id: 1,
+                    id: 3,
                     title: "Story 3",
                     href: "/story/3",
                 },
