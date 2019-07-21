@@ -1,52 +1,39 @@
 @import "../../styles/_index.scss";
 
-.image-boxes {
+$spacing: 2em;
+
+.home {
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
 
-    @include respond-to(small) {
-        flex-direction: column;
-    }
-    @include respond-to(medium) {
-        flex-direction: column;
-    }
-    @include respond-to(large) {
+    .images {
+        display: flex;
         flex-direction: row;
-    }
 
-    &.primary {
-        a {
-            @include respond-to(small) {
-                height: 200px;
-                margin-right: 0;
+        > a {
+            display: flex;
+            flex: 1 1 auto;
+            margin-right: $spacing;
+            margin-bottom: $spacing;
+
+            &:last-of-type {
+                margin-right: 30px;
             }
-            @include respond-to(medium) {
-                height: 300px;
-                margin-right: 0;
-            }
-            @include respond-to(large) {
-                height: 400px;
+            &:first-of-type {
+                margin-left: 30px;
             }
         }
     }
 
-    &.secondary {
-        a {
-            @include respond-to(small) {
-                height: 200px;
-                margin-right: 0;
-            }
-            @include respond-to(medium) {
-                height: 300px;
-                margin-right: 0;
-            }
-            @include respond-to(large) {
-                height: 400px;
+    @include respond-below(md) {
+        .images {
+            flex-direction: column;
+            a {
+                margin-right: 10px !important;
+                margin-left: 10px !important;
+                margin-bottom: 20px;
             }
         }
-    }
-
-    > a:last-of-type {
-        margin-right: 0;
     }
 }

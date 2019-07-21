@@ -13,9 +13,6 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-@import "./header.scss";
-</style>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator"
@@ -26,4 +23,7 @@ class Header extends Vue {}
 export default Header
 </script>
 
+<style scoped lang="scss">
+@import "./header.scss";
+</style>
 

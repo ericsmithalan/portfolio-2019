@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="image-boxes primary">
+    <div class="images primary">
       <ImageBox
         v-for="item in primary"
         :key="item.id"
@@ -9,7 +9,7 @@
         :href="item.href"
       />
     </div>
-    <div class="image-boxes secondary">
+    <div class="images secondary">
       <ImageBox
         v-for="item in secondary"
         :key="item.id"

@@ -20,27 +20,5 @@ export default class ImageBox extends Vue {
 
 
 <style scoped lang="scss">
-@import "../../styles/_colors.scss";
-
-.image-box {
-    border: 1px solid $gray-light;
-    background: white;
-    display: flex;
-    position: relative;
-    min-height: 200px;
-    padding: 8px;
-    margin: 0 15px 15px 0;
-    flex: 1 1 auto;
-}
-
-.image {
-    background-color: $gray-light;
-    flex: 1 1 auto;
-}
-
-.description {
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-}
+@import "./imageBox.scss";
 </style>

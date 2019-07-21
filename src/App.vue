@@ -1,19 +1,23 @@
 <template>
   <div class="app">
     <div class="shell">
-      <Header />
-      <router-view />
+      <div class="header-container">
+        <Header />
+      </div>
+      <div class="content-container">
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
 
-<style scope lang="scss">
+<style lang="scss">
 @import "./app.scss";
 </style>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator"
-import Header from "@/components/header/Header"
+import Header from "@/components/header/Header.vue"
 
 @Component({
     components: {
