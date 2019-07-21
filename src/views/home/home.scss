@@ -1,0 +1,52 @@
+@import "../../styles/_index.scss";
+
+.image-boxes {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(small) {
+        flex-direction: column;
+    }
+    @include respond-to(medium) {
+        flex-direction: column;
+    }
+    @include respond-to(large) {
+        flex-direction: row;
+    }
+
+    &.primary {
+        a {
+            @include respond-to(small) {
+                height: 200px;
+                margin-right: 0;
+            }
+            @include respond-to(medium) {
+                height: 300px;
+                margin-right: 0;
+            }
+            @include respond-to(large) {
+                height: 400px;
+            }
+        }
+    }
+
+    &.secondary {
+        a {
+            @include respond-to(small) {
+                height: 200px;
+                margin-right: 0;
+            }
+            @include respond-to(medium) {
+                height: 300px;
+                margin-right: 0;
+            }
+            @include respond-to(large) {
+                height: 400px;
+            }
+        }
+    }
+
+    > a:last-of-type {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,54 @@
+<template>
+  <div class="stories">
+    <ImageBox
+      v-for="item in stories"
+      :key="item.id"
+      :title="item.title"
+      :imageUrl="item.imageUrl"
+      :href="item.href"
+    />
+  </div>
+</template>
+<style lang="scss">
+@import "../../styles/_index.scss";
+.stories {
+    display: flex;
+    flex-direction: row;
+}
+</style>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator"
+import ImageBox from "@/components/imageBox/ImageBox.vue"
+
+@Component({
+    components: {
+        ImageBox,
+    },
+})
+class Stories extends Vue {
+    data() {
+        return {
+            stories: [
+                {
+                    id: 1,
+                    title: "Story 1",
+                    href: "/story/1",
+                },
+                {
+                    id: 1,
+                    title: "Story 2",
+                    href: "/story/2",
+                },
+                {
+                    id: 1,
+                    title: "Story 3",
+                    href: "/story/3",
+                },
+            ],
+        }
+    }
+}
+
+export default Stories
+</script>
