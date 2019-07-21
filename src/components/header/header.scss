@@ -1,23 +1,20 @@
 @import "../../styles/_index.scss";
 
-.image-box {
-    border: 1px solid $gray-light;
-    background: white;
+.header {
     display: flex;
-    position: relative;
-    min-height: 200px;
-    padding: 8px;
-    margin: 0 15px 15px 0;
-    flex: 1 1 auto;
-}
+    flex-direction: row;
+    margin-bottom: 30px;
 
-.image {
-    background-color: $gray-light;
-    flex: 1 1 auto;
-}
+    .nav {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: flex-end;
 
-.description {
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
+        a {
+            display: block;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+    }
 }
