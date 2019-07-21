@@ -10,11 +10,7 @@
   </div>
 </template>
 <style lang="scss">
-@import "../../styles/_index.scss";
-.stories {
-    display: flex;
-    flex-direction: row;
-}
+@import "./stories.scss";
 </style>
 
 <script lang="ts">

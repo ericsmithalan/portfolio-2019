@@ -8,23 +8,7 @@
 </template>
 
 <style scope lang="scss">
-@import "../../styles/_index.scss";
-.image {
-    display: flex;
-    background-color: $gray-light;
-    min-height: 400px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 30px;
-}
-
-h2 {
-    margin: 0;
-    padding: 0;
-    font-weight: 100;
-}
+@import "./story.scss";
 </style>
 
 <script lang="ts">

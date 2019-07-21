@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss">
-@import "../../styles/_index.scss";
+@import "./resume.scss";
 </style>
 
 <script lang="ts">

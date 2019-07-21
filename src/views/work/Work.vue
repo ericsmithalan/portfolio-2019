@@ -3,7 +3,7 @@
 </template>
 
 <style lang="scss">
-@import "../../styles/_index.scss";
+@import "./work.scss";
 </style>
 
 <script lang="ts">

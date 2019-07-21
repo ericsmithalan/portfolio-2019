@@ -1,84 +1,26 @@
 <template>
   <div class="app">
     <div class="shell">
-      <div class="header">
-        <div class="me">
-          <h1>Eric Smith</h1>
-          <h3>UX Designer</h3>
-        </div>
-        <div class="nav">
-          <router-link to="/">Home</router-link>
-          <router-link to="/stories">Stories</router-link>
-          <router-link to="/resume">Resume</router-link>
-          <router-link to="/about">About</router-link>
-        </div>
-      </div>
+      <Header />
       <router-view />
     </div>
   </div>
 </template>
 
 <style scope lang="scss">
-@import "./styles/_index";
-
-.app {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    background: $gray-light;
-}
-
-.shell {
-    flex: 1 1 auto;
-    max-width: 1400;
-    background: #fff;
-    padding: 30px;
-    margin: 0 30px;
-
-    .header {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 30px;
-
-        .me {
-            h1,
-            h3 {
-                margin: 0;
-                padding: 0;
-                font-weight: normal;
-            }
-        }
-
-        .nav {
-            display: flex;
-            flex: 1;
-            flex-direction: row;
-            justify-content: flex-end;
-
-            a {
-                display: block;
-                margin: 0 15px;
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-.nav {
-    padding: 30px;
-    a {
-        color: $nav-link-color;
-        &.router-link-exact-active {
-            color: $nav-link-selected-color;
-            font-weight: bold;
-        }
-    }
-}
+@import "./app.scss";
 </style>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator"
+import Header from "@/components/header/Header"
+
+@Component({
+    components: {
+        Header,
+    },
+})
+class Home extends Vue {}
+
+export default Home
+</script>
