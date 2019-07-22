@@ -1,12 +1,15 @@
 <template>
   <div class="stories">
-    <ImageBox
-      v-for="item in stories"
-      :key="item.id"
-      :title="item.title"
-      :imageUrl="item.imageUrl"
-      :href="item.href"
-    />
+    <div class="hero">[hero]</div>
+    <div class="items">
+      <ImageBox
+        v-for="item in stories"
+        :key="item.id"
+        :title="item.title"
+        :imageUrl="item.imageUrl"
+        :href="item.href"
+      />
+    </div>
   </div>
 </template>
 <style lang="scss">

@@ -12,12 +12,14 @@ body {
     width: 100%;
     height: 100%;
     background: $gray-light;
+    @include font-size(14px);
 }
 
 .app {
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
+    padding-bottom: 200px;
 
     h1,
     h2,
@@ -28,6 +30,7 @@ body {
     }
 
     .shell {
+        position: relative;
         display: flex;
         flex: 1 1 auto;
         max-width: 1400px;

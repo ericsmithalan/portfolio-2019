@@ -1,12 +1,44 @@
 @import "../../styles/_index.scss";
-
-.image {
+.story {
     display: flex;
-    background-color: $gray-light;
-    min-height: 400px;
+    flex: 1 1 auto;
+    flex-direction: column;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 30px;
+
+    .hero {
+        display: flex;
+        flex: 1 1 auto;
+        height: 400px;
+        background-color: $gray-light;
+        background-image: url("../../assets/IMG_0656.png");
+        background-position-y: -300px;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        margin: auto;
+        max-width: 900px;
+        min-width: 300px;
+        padding-bottom: 200px;
+
+        @include font-size(22px);
+        @include line-height(30px);
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .image-placeholder {
+            background-color: $gray-light;
+            height: 300px;
+        }
+    }
+
+    @include respond-below(md) {
+        .hero {
+        }
+
+        .content {
+        }
+    }
 }

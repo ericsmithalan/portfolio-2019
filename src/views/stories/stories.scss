@@ -4,30 +4,47 @@ $spacing: 2em;
 
 .stories {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 1 1 auto;
 
-    > a {
-        display: flex;
-        flex: 1 1 auto;
-        margin-right: $spacing;
+    .hero {
+        height: 500px;
+        background-color: $gray-light;
         margin-bottom: $spacing;
+        background-image: url("../../assets/molds.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
-        flex: 1 1 auto;
-        &:last-of-type {
-            margin-right: 30px;
-        }
-        &:first-of-type {
-            margin-left: 30px;
+    .items {
+        display: flex;
+        flex-direction: row;
+        > a {
+            display: flex;
+            flex: 1 1 auto;
+            margin-right: $spacing;
+            margin-bottom: $spacing;
+
+            flex: 1 1 auto;
+            &:last-of-type {
+                margin-right: 30px;
+            }
+            &:first-of-type {
+                margin-left: 30px;
+            }
         }
     }
 
     @include respond-below(md) {
-        flex-direction: column;
-        > a {
-            margin-right: 10px !important;
-            margin-left: 10px !important;
-            margin-bottom: 20px;
+        .items {
+            flex-direction: column;
+            > a {
+                margin-right: 10px !important;
+                margin-left: 10px !important;
+                margin-bottom: 20px;
+            }
         }
     }
 }

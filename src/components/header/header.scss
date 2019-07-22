@@ -2,10 +2,15 @@
 
 .header {
     display: flex;
+    position: absolute;
+    z-index: 100;
     flex-direction: row;
     margin: 30px;
     flex: 1 1 auto;
     margin-top: 1.5em;
+    left: 0;
+    right: 0;
+    top: 0;
 
     h1 {
         font-size: 1.8em;
