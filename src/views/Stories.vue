@@ -12,13 +12,10 @@
     </div>
   </div>
 </template>
-<style lang="scss">
-@import "./stories.scss";
-</style>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator"
-import ImageBox from "@/components/imageBox/ImageBox.vue"
+import ImageBox from "@/components/ImageBox.vue"
 
 @Component({
     components: {

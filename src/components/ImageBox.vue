@@ -17,8 +17,3 @@ export default class ImageBox extends Vue {
     @Prop() private href!: string
 }
 </script>
-
-
-<style scoped lang="scss">
-@import "./imageBox.scss";
-</style>

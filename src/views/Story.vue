@@ -67,10 +67,6 @@
   </div>
 </template>
 
-<style scope lang="scss">
-@import "./story.scss";
-</style>
-
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator"
 

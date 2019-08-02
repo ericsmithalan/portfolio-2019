@@ -1,33 +1,21 @@
-@import "../../styles/_index.scss";
-
 $spacing: 2em;
 
-.stories {
+.home {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    margin-top: 120px;
 
-    .hero {
-        height: 500px;
-        background-color: $gray-light;
-        margin-bottom: $spacing;
-        background-image: url("../../assets/molds.png");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-
-    .items {
+    .images {
         display: flex;
         flex-direction: row;
+
         > a {
             display: flex;
             flex: 1 1 auto;
             margin-right: $spacing;
             margin-bottom: $spacing;
 
-            flex: 1 1 auto;
             &:last-of-type {
                 margin-right: 30px;
             }
@@ -38,9 +26,9 @@ $spacing: 2em;
     }
 
     @include respond-below(md) {
-        .items {
+        .images {
             flex-direction: column;
-            > a {
+            a {
                 margin-right: 10px !important;
                 margin-left: 10px !important;
                 margin-bottom: 20px;

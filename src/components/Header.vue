@@ -22,8 +22,3 @@ class Header extends Vue {}
 
 export default Header
 </script>
-
-<style scoped lang="scss">
-@import "./header.scss";
-</style>
-
