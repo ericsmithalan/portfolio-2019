@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Learning to model",
+        "text": "There was a lot of 3D going on within OMAX so I needed to learn how to model. I started by watching videos and then set a goal to model at least one object a day. I would find any random object online and try to model it. ",
+        "images": "omax-3d-1.png"
+    },
+    {
+        "title": "Using 3D to help design 2D Application",
+        "text": "I experimented with enhancing the user experience by adding 3D images. ",
+        "images": "omax-3d-2.png"
+    },
+    {
+        "title": "Designing the 3D simulator",
+        "text": "Our 3D Developer was creating a cut simulator so I used 3DS MAX to design the experience. ",
+        "images": "omax-3d-3.png"
+    },
+    {
+        "title": "Interacting with 3D objects inside 2D application",
+        "text": "I also experimented with concepts that would let users interact with some of the operations. One such operation is pathing. For a machine to cut, it needs a path and that path is typically created automatically. However, users can modify it to fit their needs. ",
+        "images": "omax-3d-4.png"
+    },
+    {
+        "title": "",
+        "text": "Machines also need to know the material to adjust the water pressure accordingly. I also saw this as a perfect opportunity to let the user see what the object would look like after cutting.",
+        "images": "omax-3d-5.png"
+    },
+    {
+        "title": "",
+        "text": "Depending on many factors such as object size and path, cuts could fail or produce an end result that doesn't match specs. I experimented with ideas to expose issues before the object was cut.  ",
+        "images": "omax-3d-6.png"
+    },
+    {
+        "title": "AR/VR Concepts",
+        "text": "I was asked to come up with some AR/VR concepts to showcase how it can benefit users.",
+        "images": "omax-3d-7.png"
+    },
+    {
+        "title": "",
+        "text": "For VR, I saw some potential value in training and help. The image below is a 3D wireframe where the middle square represents a waterject. The idea here is that a user could interact with the machine to learn more about it's components. ",
+        "images": "omax-3d-8.png"
+    },
+    {
+        "title": "",
+        "text": "Most of my work in AR/VR were concept designs meant to spark ideas and to keep management motivated on the idea.",
+        "images": ""
+    }
+]
